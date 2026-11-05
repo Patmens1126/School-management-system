@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News &amp; Programmes | STARONIC</title>
+  <meta name="description" content="School news, announcements, and upcoming programmes at STARONIC.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body class="news-page">
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="/index.html">
+      <img src="/images/logo.jpeg" alt="STARONIC school logo">
+      <span>STARONIC</span>
+    </a>
+    <nav aria-label="Main">
+    <ul class="site-nav">
+      <li><a class="nav-home" href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/academics.html">Academics</a></li>
+      <li><a href="/admissions.html">Admissions</a></li>
+      <li><a href="/news.html" aria-current="page">News</a></li>
+    </ul>
+    </nav>
+  </div>
+</header>
+<main class="news-main">
+  <div class="page-title news-title"><div><p class="tag">STARONIC community</p><h1>News &amp; programmes</h1></div></div>
+  <section class="section news-section" aria-labelledby="news-intro">
+    <div class="news-toolbar">
+      <div>
+        <h2 id="news-intro">What’s happening at STARONIC</h2>
+        <p class="muted">School updates, stories, and upcoming events for our community.</p>
+      </div>
+      <div class="news-filters" role="group" aria-label="Filter news">
+        <button class="btn btn-sm" type="button" data-news-filter="all" aria-pressed="true">All updates</button>
+        <button class="btn btn-secondary btn-sm" type="button" data-news-filter="news" aria-pressed="false">School news</button>
+        <button class="btn btn-secondary btn-sm" type="button" data-news-filter="programme" aria-pressed="false">Programmes</button>
+      </div>
+    </div>
+    <div id="news-status" class="muted" role="status" aria-live="polite">Loading the latest updates…</div>
+    <div id="news-list" class="news-grid" aria-live="polite"></div>
+  </section>
+</main>
+<footer class="site-footer"><div class="site-footer-credit">© 2026 Staronic Educational Complex. All rights reserved. Website by Dmens Tech.</div></footer>
+<script src="/js/vendor/supabase.js"></script>
+<script type="module" src="/js/news.js"></script>
+</body>
+</html>

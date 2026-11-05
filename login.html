@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sign in | STARONIC</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body class="auth-wrap" data-page="login">
+<main class="auth-main">
+  <div class="auth-card">
+    <p><a href="/index.html">Back to the school website</a></p>
+    <h1>Sign in</h1>
+    <p class="muted">Use the account the school created for you. Accounts cannot be created on this page.</p>
+    <div id="msg" aria-live="polite"></div>
+    <form id="login-form" novalidate>
+      <label class="field"><span>Email</span><input type="email" name="email" autocomplete="username" maxlength="254" required></label>
+      <label class="field"><span>Password</span><input type="password" name="password" autocomplete="current-password" maxlength="72" required></label>
+      <button class="btn btn-block" type="submit">Sign in</button>
+    </form>
+    <p><button type="button" id="forgot-toggle" class="link-button">Forgot your password?</button></p>
+    <form id="forgot-form" hidden novalidate>
+      <label class="field"><span>Your account email</span><input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+      <button class="btn btn-secondary btn-block" type="submit">Send reset link</button>
+    </form>
+    <noscript><p class="alert alert-error">JavaScript is required to sign in.</p></noscript>
+  </div>
+</main>
+<script src="/js/vendor/supabase.js"></script>
+<script type="module" src="/js/auth.js"></script>
+</body>
+</html>
